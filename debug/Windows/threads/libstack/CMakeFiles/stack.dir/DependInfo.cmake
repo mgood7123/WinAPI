@@ -18,8 +18,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "../Windows/threads"
-  "../Windows/threads/include"
   "../Windows/threads/libstack/include"
+  "../Windows/threads/libthread/include"
+  "../Windows/threads/libthread/include/thread"
+  "../Windows/threads/include"
   )
 
 # Targets to which this target links.

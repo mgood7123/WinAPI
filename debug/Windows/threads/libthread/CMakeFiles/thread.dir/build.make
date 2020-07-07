@@ -80,6 +80,7 @@ thread_EXTERNAL_OBJECTS =
 Windows/threads/libthread/libthread.so: Windows/threads/libthread/CMakeFiles/thread.dir/src/ExecutionManager.cpp.o
 Windows/threads/libthread/libthread.so: Windows/threads/libthread/CMakeFiles/thread.dir/build.make
 Windows/threads/libthread/libthread.so: Windows/threads/libstack/libstack.so
+Windows/threads/libthread/libthread.so: Windows/threads/libprintln.so
 Windows/threads/libthread/libthread.so: Windows/threads/libthread/CMakeFiles/thread.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smallville7123/app/WinAPI/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libthread.so"
 	cd /home/smallville7123/app/WinAPI/debug/Windows/threads/libthread && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/thread.dir/link.txt --verbose=$(VERBOSE)

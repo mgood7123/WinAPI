@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libthread.so -o libthread.so CMakeFiles/thread.dir/src/ExecutionManager.cpp.o  -Wl,-rpath,/home/smallville7123/app/WinAPI/release/Windows/threads/libstack:/home/smallville7123/app/WinAPI/release/Windows/threads ../libstack/libstack.so ../libprintln.so 

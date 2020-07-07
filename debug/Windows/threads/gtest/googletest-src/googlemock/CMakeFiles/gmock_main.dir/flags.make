@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTH
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/smallville7123/app/WinAPI/include -I/home/smallville7123/app/WinAPI/Windows/threads -isystem /home/smallville7123/app/WinAPI/Windows/threads/gtest/googletest-src/googlemock/include -isystem /home/smallville7123/app/WinAPI/Windows/threads/gtest/googletest-src/googlemock -isystem /home/smallville7123/app/WinAPI/Windows/threads/gtest/googletest-src/googletest/include -isystem /home/smallville7123/app/WinAPI/Windows/threads/gtest/googletest-src/googletest 
+CXX_INCLUDES = -I/home/smallville7123/app/WinAPI/include -I/home/smallville7123/app/WinAPI/Windows/threads -I/home/smallville7123/app/WinAPI/Windows/threads/libstack/include -I/home/smallville7123/app/WinAPI/Windows/threads/libthread/include -I/home/smallville7123/app/WinAPI/Windows/threads/libthread/include/thread -isystem /home/smallville7123/app/WinAPI/Windows/threads/gtest/googletest-src/googlemock/include -isystem /home/smallville7123/app/WinAPI/Windows/threads/gtest/googletest-src/googlemock -isystem /home/smallville7123/app/WinAPI/Windows/threads/gtest/googletest-src/googletest/include -isystem /home/smallville7123/app/WinAPI/Windows/threads/gtest/googletest-src/googletest 
 

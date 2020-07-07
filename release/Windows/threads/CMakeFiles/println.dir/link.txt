@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libprintln.so -o libprintln.so CMakeFiles/println.dir/include/println.cpp.o 

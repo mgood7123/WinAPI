@@ -15,5 +15,4 @@ public:
     void unlock();
 } Locker;
 
-
 #endif //MEDIA_PLAYER_PRO_LOCKER_H

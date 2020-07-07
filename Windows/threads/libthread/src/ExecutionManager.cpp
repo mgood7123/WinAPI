@@ -16,6 +16,8 @@
 
 #include <thread/internal/ExecutionManager.h>
 
+ExecutionManager * executionManager_Current;
+
 #include <println.h>
 
 //#define println(format, ...) printf(format "\n", __VA_ARGS__)
@@ -382,6 +384,10 @@ Thread * ExecutionManager::threadNew(bool createSuspended, size_t stack_size, st
         if (executionManager_Current->debug) println("resumed from threadNew");
     }
     return x;
+}
+
+Thread * ExecutionManager::threadNew(bool createSuspended, size_t stack_size, int(*f) (void*), void * arg) {
+    return threadNew(createSuspended, stack_size, f, arg);
 }
 
 void ExecutionManager::threadJoin(Thread * t) {
@@ -782,6 +788,10 @@ Thread * threadNew(bool createSuspended, size_t stack_size, std::function<int(vo
         abort();
     }
     return executionManager_Current->threadNew(createSuspended, stack_size, f, arg);
+}
+
+Thread * threadNew(bool createSuspended, size_t stack_size, int(*f) (void*), void * arg) {
+    return threadNew(createSuspended, stack_size, f, arg);
 }
 
 Thread * threadNew(std::function<int(void*)> f, void * arg) {

@@ -83,6 +83,7 @@ Tests/libThreadsWindowsApplication.so: Windows/libWinAPI.so
 Tests/libThreadsWindowsApplication.so: Windows/Kernel/libWinKernel.so
 Tests/libThreadsWindowsApplication.so: Windows/threads/libthread/libthread.so
 Tests/libThreadsWindowsApplication.so: Windows/threads/libstack/libstack.so
+Tests/libThreadsWindowsApplication.so: Windows/threads/libprintln.so
 Tests/libThreadsWindowsApplication.so: Tests/CMakeFiles/ThreadsWindowsApplication.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smallville7123/app/WinAPI/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libThreadsWindowsApplication.so"
 	cd /home/smallville7123/app/WinAPI/debug/Tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ThreadsWindowsApplication.dir/link.txt --verbose=$(VERBOSE)

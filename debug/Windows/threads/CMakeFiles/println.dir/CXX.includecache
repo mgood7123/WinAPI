@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/smallville7123/app/WinAPI/Windows/threads/include/println.cpp
+println.h
+/home/smallville7123/app/WinAPI/Windows/threads/include/println.h
+
+/home/smallville7123/app/WinAPI/Windows/threads/include/println.h
+stdio.h
+-
+stdarg.h
+-
+

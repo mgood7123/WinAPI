@@ -183,6 +183,19 @@ WinKernel/fast:
 .PHONY : WinKernel/fast
 
 #=============================================================================
+# Target rules for targets named println
+
+# Build rule for target.
+println: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 println
+.PHONY : println
+
+# fast build rule for target.
+println/fast:
+	$(MAKE) -f Windows/threads/CMakeFiles/println.dir/build.make Windows/threads/CMakeFiles/println.dir/build
+.PHONY : println/fast
+
+#=============================================================================
 # Target rules for targets named gmock_main
 
 # Build rule for target.
@@ -313,6 +326,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... WinAPI"
 	@echo "... WinKernel"
+	@echo "... println"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"

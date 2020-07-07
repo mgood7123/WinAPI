@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Windows/threads/libstack/include/stack/internal/direction.h
+
+../Windows/threads/libstack/include/stack/stack.h
+stack/internal/direction.h
+-
+stdlib.h
+-
+
+/home/smallville7123/app/WinAPI/Windows/threads/libstack/tests/stack.cpp
+stack/stack.h
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/test_stack.dir/stack.cpp.o  -o test_stack  -Wl,-rpath,/home/smallville7123/app/WinAPI/release/Windows/threads/libstack ../libstack.so 

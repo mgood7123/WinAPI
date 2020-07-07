@@ -12,6 +12,9 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "../Windows/threads"
+  "../Windows/threads/libstack/include"
+  "../Windows/threads/libthread/include"
+  "../Windows/threads/libthread/include/thread"
   "../Windows/threads/gtest/googletest-src/googlemock/include"
   "../Windows/threads/gtest/googletest-src/googlemock"
   "../Windows/threads/gtest/googletest-src/googletest/include"

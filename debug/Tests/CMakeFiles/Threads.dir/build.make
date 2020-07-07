@@ -83,6 +83,7 @@ Tests/Threads: Windows/libWinAPI.so
 Tests/Threads: Windows/Kernel/libWinKernel.so
 Tests/Threads: Windows/threads/libthread/libthread.so
 Tests/Threads: Windows/threads/libstack/libstack.so
+Tests/Threads: Windows/threads/libprintln.so
 Tests/Threads: Tests/CMakeFiles/Threads.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smallville7123/app/WinAPI/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Threads"
 	cd /home/smallville7123/app/WinAPI/debug/Tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Threads.dir/link.txt --verbose=$(VERBOSE)

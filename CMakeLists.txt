@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.4.1)
 include_directories(include)
 include_directories(Windows/threads)
+include_directories(Windows/threads/libstack/include)
+include_directories(Windows/threads/libthread/include)
+include_directories(Windows/threads/libthread/include/thread)
 add_subdirectory(Windows)
 add_subdirectory(Tests)

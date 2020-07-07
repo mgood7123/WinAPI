@@ -4,14 +4,14 @@
 
 #include <Windows/Locker.h>
 
-Locker::Locker() {
+Lock::Lock() {
     this->LOCK = false;
 }
 
-void Locker::lock() {
+void Lock::lock() {
     if (this->LOCK) while (this->LOCK) {}
     else this->LOCK = true;
 }
-void Locker::unlock() {
+void Lock::unlock() {
     this->LOCK = false;
 }

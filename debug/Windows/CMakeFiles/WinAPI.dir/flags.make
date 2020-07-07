@@ -6,5 +6,5 @@ CXX_FLAGS = -g -fPIC
 
 CXX_DEFINES = -DWinAPI_EXPORTS
 
-CXX_INCLUDES = -I/home/smallville7123/app/WinAPI/include -I/home/smallville7123/app/WinAPI/Windows/threads 
+CXX_INCLUDES = -I/home/smallville7123/app/WinAPI/include -I/home/smallville7123/app/WinAPI/Windows/threads -I/home/smallville7123/app/WinAPI/Windows/threads/libstack/include -I/home/smallville7123/app/WinAPI/Windows/threads/libthread/include -I/home/smallville7123/app/WinAPI/Windows/threads/libthread/include/thread 
 

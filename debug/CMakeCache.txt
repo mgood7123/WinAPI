@@ -341,7 +341,7 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Dependencies for the target
-thread_LIB_DEPENDS:STATIC=general;stack;
+thread_LIB_DEPENDS:STATIC=general;stack;general;println;
 
 
 ########################

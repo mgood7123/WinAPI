@@ -156,6 +156,48 @@ depend:
 	cd /home/smallville7123/app/WinAPI/debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+Windows/threads/CMakeFiles/println.dir/rule:
+	cd /home/smallville7123/app/WinAPI/debug && $(MAKE) -f CMakeFiles/Makefile2 Windows/threads/CMakeFiles/println.dir/rule
+.PHONY : Windows/threads/CMakeFiles/println.dir/rule
+
+# Convenience name for target.
+println: Windows/threads/CMakeFiles/println.dir/rule
+
+.PHONY : println
+
+# fast build rule for target.
+println/fast:
+	cd /home/smallville7123/app/WinAPI/debug && $(MAKE) -f Windows/threads/CMakeFiles/println.dir/build.make Windows/threads/CMakeFiles/println.dir/build
+.PHONY : println/fast
+
+include/println.o: include/println.cpp.o
+
+.PHONY : include/println.o
+
+# target to build an object file
+include/println.cpp.o:
+	cd /home/smallville7123/app/WinAPI/debug && $(MAKE) -f Windows/threads/CMakeFiles/println.dir/build.make Windows/threads/CMakeFiles/println.dir/include/println.cpp.o
+.PHONY : include/println.cpp.o
+
+include/println.i: include/println.cpp.i
+
+.PHONY : include/println.i
+
+# target to preprocess a source file
+include/println.cpp.i:
+	cd /home/smallville7123/app/WinAPI/debug && $(MAKE) -f Windows/threads/CMakeFiles/println.dir/build.make Windows/threads/CMakeFiles/println.dir/include/println.cpp.i
+.PHONY : include/println.cpp.i
+
+include/println.s: include/println.cpp.s
+
+.PHONY : include/println.s
+
+# target to generate assembly for a file
+include/println.cpp.s:
+	cd /home/smallville7123/app/WinAPI/debug && $(MAKE) -f Windows/threads/CMakeFiles/println.dir/build.make Windows/threads/CMakeFiles/println.dir/include/println.cpp.s
+.PHONY : include/println.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -168,6 +210,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... println"
+	@echo "... include/println.o"
+	@echo "... include/println.i"
+	@echo "... include/println.s"
 .PHONY : help
 
 

@@ -97,6 +97,7 @@ class ExecutionManager {
         Thread * threadNew(size_t stack_size, std::function<void()> f);
         Thread * threadNew(std::function<void()> f);
         Thread * threadNew(bool createSuspended, size_t stack_size, int (*f)(void*), void * arg);
+        Thread * threadNew(bool createSuspended, size_t stack_size, std::function<int(void*)> f, void * arg);
         Thread * threadNewSuspended(size_t stack_size, std::function<int(void*)> f, void * arg);
         Thread * threadNewSuspended(std::function<int(void*)> f, void * arg);
         Thread * threadNewSuspended(size_t stack_size, std::function<void()> f);
@@ -120,7 +121,7 @@ class ExecutionManager {
 
 void executionManager_Terminate();
 
-ExecutionManager * executionManager_Current;
+extern ExecutionManager * executionManager_Current;
 
 void executionManager_SetExecutionManager(ExecutionManager * executionManager);
 ExecutionManager * executionManager_GetExecutionManager();
@@ -132,6 +133,7 @@ Thread * threadNew(size_t stack_size, std::function<int(void*)> f, void * arg);
 Thread * threadNew(std::function<int(void*)> f, void * arg);
 Thread * threadNew(size_t stack_size, std::function<void()> f);
 Thread * threadNew(std::function<void()> f);
+Thread * threadNew(bool createSuspended, size_t stack_size, int (*f)(void*), void * arg);
 Thread * threadNew(bool createSuspended, size_t stack_size, std::function<int(void*)> f, void * arg);
 Thread * threadNewSuspended(size_t stack_size, std::function<int(void*)> f, void * arg);
 Thread * threadNewSuspended(std::function<int(void*)> f, void * arg);

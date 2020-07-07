@@ -157,6 +157,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named println
+
+# Build rule for target.
+println: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 println
+.PHONY : println
+
+# fast build rule for target.
+println/fast:
+	$(MAKE) -f CMakeFiles/println.dir/build.make CMakeFiles/println.dir/build
+.PHONY : println/fast
+
+#=============================================================================
 # Target rules for targets named gmock_main
 
 # Build rule for target.
@@ -247,6 +260,33 @@ thread/fast:
 	$(MAKE) -f libthread/CMakeFiles/thread.dir/build.make libthread/CMakeFiles/thread.dir/build
 .PHONY : thread/fast
 
+include/println.o: include/println.cpp.o
+
+.PHONY : include/println.o
+
+# target to build an object file
+include/println.cpp.o:
+	$(MAKE) -f CMakeFiles/println.dir/build.make CMakeFiles/println.dir/include/println.cpp.o
+.PHONY : include/println.cpp.o
+
+include/println.i: include/println.cpp.i
+
+.PHONY : include/println.i
+
+# target to preprocess a source file
+include/println.cpp.i:
+	$(MAKE) -f CMakeFiles/println.dir/build.make CMakeFiles/println.dir/include/println.cpp.i
+.PHONY : include/println.cpp.i
+
+include/println.s: include/println.cpp.s
+
+.PHONY : include/println.s
+
+# target to generate assembly for a file
+include/println.cpp.s:
+	$(MAKE) -f CMakeFiles/println.dir/build.make CMakeFiles/println.dir/include/println.cpp.s
+.PHONY : include/println.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,6 +299,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... println"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
@@ -266,6 +307,9 @@ help:
 	@echo "... stack"
 	@echo "... test_stack"
 	@echo "... thread"
+	@echo "... include/println.o"
+	@echo "... include/println.i"
+	@echo "... include/println.s"
 .PHONY : help
 
 
