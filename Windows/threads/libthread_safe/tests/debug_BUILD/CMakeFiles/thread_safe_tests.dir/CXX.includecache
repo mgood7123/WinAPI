@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/smallville7123/app/WinAPI/Windows/threads/libthread_safe/src/Lock.cpp
+thread_safe/thread_safe_lock.h
+-
+
+/home/smallville7123/app/WinAPI/Windows/threads/libthread_safe/src/thread_safeExceptions.cpp
+thread_safe/thread_safe.h
+-
+
+/home/smallville7123/app/WinAPI/Windows/threads/libthread_safe/tests/thread_safe_general.cpp
+thread_safe/thread_safe.h
+-
+gtest/gtest.h
+-
+
+/home/smallville7123/app/WinAPI/Windows/threads/libthread_safe/tests/thread_safe_lock.cpp
+thread_safe/thread_safe.h
+-
+thread_safe/thread_safe_lock.h
+-
+gtest/gtest.h
+-
+thread
+-
+pthread.h
+-
+
+/home/smallville7123/app/WinAPI/Windows/threads/libthread_safe/tests/thread_safe_thread.cpp
+thread_safe/thread_safe.h
+-
+gtest/gtest.h
+-
+vector
+-
+thread
+-
+atomic
+-
+

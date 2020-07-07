@@ -1,0 +1,3 @@
+/home/smallville7123/app/WinAPI/Windows/threads/libthread_safe/tests/debug_BUILD/CMakeFiles/rebuild_cache.dir
+/home/smallville7123/app/WinAPI/Windows/threads/libthread_safe/tests/debug_BUILD/CMakeFiles/edit_cache.dir
+/home/smallville7123/app/WinAPI/Windows/threads/libthread_safe/tests/debug_BUILD/CMakeFiles/thread_safe_tests.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libthread_safe.so -o libthread_safe.so CMakeFiles/thread_safe.dir/src/thread_safeExceptions.cpp.o CMakeFiles/thread_safe.dir/src/Lock.cpp.o 
